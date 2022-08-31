@@ -35,7 +35,7 @@ body {
 }
 
 .main {
-    color: #FFFFFF;
+    color: #FBFBFB;
     font-size: 27px;
     size: 20px;
     font-weight: 800;
@@ -43,7 +43,7 @@ body {
 }
 
 .sub {
-    color: #B1B1B5;
+    color: #EDEDED;
     font-size: 14px;
     font-weight: 400;
     size: 14px;
@@ -94,7 +94,18 @@ body {
     color: #000;
 }
 
+.social-menu ul li .far {
+    font-size: 30px;
+    line-height: 60px;
+    transition: .3s;
+    color: #000;
+}
+
 .social-menu ul li .fab:hover {
+    color: #fff;
+}
+
+.social-menu ul li .far:hover {
     color: #fff;
 }
 

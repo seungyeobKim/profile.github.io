@@ -11,8 +11,8 @@ body {
 
 .pro {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: row; /* 왼쪽 전개로 내용 전개 */
+    align-items: flex-start; /* 컨테이너 영역의 최상단부터 전개, 세로축 */
     margin-bottom: 160px;
     margin-right: 900px;
 }

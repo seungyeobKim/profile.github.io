@@ -13,7 +13,7 @@
     z-index: 1;
     background-position: center;
     background-size: cover;
-    background-image: url("/img/title.jpg");
+    background-image: url("./img/title.jpg");
 }
 .main_title {
     /** 정렬 **/
@@ -35,7 +35,7 @@
     float: right;
     position: absolute;
     z-index: 2;
-    margin-top: 32px;
+    margin-top: 40px;
     margin-left: 1700px;
 }
 

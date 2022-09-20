@@ -1,3 +1,8 @@
+body {
+    background-image: url("./img/title.jpg");
+    background-size: auto;
+}
+
 .wrap {
     display: flex;
     position: relative;
@@ -13,7 +18,7 @@
     z-index: 1;
     background-position: center;
     background-size: cover;
-    background-image: url("./img/title.jpg");
+    background-image: url("/img/title.jpg");
 }
 .main_title {
     /** 정렬 **/
@@ -106,4 +111,34 @@
 
 .social-menu ul li:nth-child(4) a:hover {
     background: rgba(0, 0, 0, 0.829);
+}
+
+.emoji1 {
+    display: block;
+    float: right;
+    position: absolute;
+    z-index: 2;
+    width: 32px;
+    height: 32px;
+    margin-left: 1098px;
+    margin-top: 1495px;
+}
+
+.about {
+    /** 폰트 **/
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #14ae87;
+    /** 정렬 **/
+    display: block;
+    float: right;
+    position: absolute;
+    z-index: 2;
+    margin-left: 1134px;
+    margin-top: 1494px;
+}
+
+.line {
+
 }

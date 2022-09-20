@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <!-- nanum-square font import -->
-    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
-
-    <!-- Roboto font import -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <!-- jQuery import -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Fullpage CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
 
     <!-- AOS CDN -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -24,7 +21,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Profile_KSY">
-    <meta property="og:description" content="김승엽입니다.">
+    <meta property="og:description" content="개발자&디자이너 김승엽 입니다.">
     <meta property="og:image" content="https://lh3.googleusercontent.com/fife/AAbDypAvwWvNVRHYHu17iaGtJqhi8IFSkHRRYcyxPC4J2eFK1GTW70LzFRkgHlX_kKIw4erk3ByqfdG8L4FsmrwLL4FskhURP3iUjGJEk6GjfK1pcxbItXZubdXS3ipF-oUGMn8M-yg67iPdTcBCdBq-svlYSDjdF2tVaMs0wIs25gE8viJHfnAuHJOQhIs-Z_3HEYMQtslolO9IqU59dOpQo27XQgJSvq9u74xtuKiOaWpozNagCcrNnlWUiKqf1mjuzsDuTWGhIM1QKC8aenw_dn3gGIyU6QrB9WGoJoiTDMf3JDtYNm7Oi4WEZQAULDpHwHWg5Z_k6KDt4cOsl4PJUvrIUzGBlVWVvvCw5AcqNDcI18-5zRETABI5f5FNb1uPIs1GOilfkLY1GT8IirsZzAyVQ7psqtGLFCBqFk7smLnWgV33ZkR6nPyp5DjaGQiT4EgOierAkNA5Zhhs-H2hnRiuXe0EkT4j7qgR8pb4NGBBDAwS61z1oQ1_CBPADSodlRlPQRLbeVcbg96d00X0TYMGlaW-Mw-JSkAVPONHXJP5lps2vw6cDGcKdweUn5iZeAy2EfpP5nof_LwZG5kdZRhrfr49-Efs2r4axjGr73a7DZB1cBq37_Q1AZc-qJTl-5CYj8UjtbkV4o9yCo__JvYxGTUGzuhRXSOo_5Hc0w2x2xZrcNWBH_zL3HvevgVvmgvtAG7HH54HqmFIETi4q9R4KPw7PWvcxktOCqlS4IWwdgV2I5yZnkXtqn-MTzeOnRIsCMoL7b2qTjqQLIdpHqo1MtpR6gZbx7sooRVl_e4Q0AB5wHD2w-vyJQ6AQS1-yD0eBlw1VGoh8A6AvN-WTtF_-BCtfecGjvRN-K_mcx8bFLKkYClHcusUzqa68uo2bp4KMbC-5KgZYg97Xlcpaq9MSrP059sPY2_tLa1z9OimpY8_uPH_w1X-x0qmfXKGSzjRhWfS1f07wNU9_IojrmZiIJ7se-veAm4TIOfhuTGr5TrsbAuK3B8x53Y-OX4iLWiUiHG9c4kB7FDWQwMhwV3kNMsd0a-4ErH9_O_qbHHS1X8-UWeNOyyjLEr59dUpMg7eLssdRcZ_ZawJE0Q3HKv2vHXRgoqzOEkZs-iKFvjvLpfkOT4yxfa7OvHuxoRU5bAoDnQp683oyEo8S4AXGQZj_2Tg3QhJ-q_2w435XeSfwq3sOx2jId1hTdaGpKjCX71j9zFpHmsdZLM5xaBQP-f4e7m5zcH_b-QV2_WcEwx8L8L8px4ytnF6HICfLLiTFdgEPvA=w1520-h923">
 
     <!-- CSS -->
@@ -35,6 +32,50 @@
 
     <!-- script -->
     <script>
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                //options here
+                licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',  // 무료 사용시 해당 라이센스 카피할 것(반드시 있어야함)
+                navigation: true,  //우측페이저유무
+                navigationPosition: 'right', // left,right(default) 페이저 위치
+                autoScrolling: true,
+                scrollHorizontally: true,
+                slidesNavigation: true, // 슬라이드섹션 네비게이션 유무
+                slidesNavPosition: 'bottom', //네비게이션 위치 (top,bottom)
+                navigationTooltips: ['profile', 'portfolio_1', 'portfolio_2', 'portfolio_3', 'portfolio_4'], //navigation active시 타이틀 노출여부(hover포함)
+                showActiveTooltip: true,  //네비게이션 hover(default:false)시 툴팁 표기
+                fitToSection: true,
+                fitToSectionDelay: 1000, // 섹션 넘어갈 때 걸리는 딜레이 시간
+                keyboardScrolling: true, // 키보드 방향키로 스크롤 컨트롤 여부
+                animateAnchor: true,
+                responsiveWidth: 1024,  // 1024px 아래에서는 풀페이지 해제
+
+                onLeave: function () {
+                    $('.section [data-aos]').each(function () {
+                        $(this).removeClass("aos-animate")
+                    });
+                },
+                onSlideLeave: function () {
+                    $('.slide [data-aos]').each(function () {
+                        $(this).removeClass("aos-animate")
+                    });
+                },
+                afterSlideLoad: function () {
+                    $('.slide.active [data-aos]').each(function () {
+                        $(this).addClass("aos-animate")
+                    });
+                },
+                afterLoad: function () {
+                    $('.section.active [data-aos]').each(function () {
+                        $(this).addClass("aos-animate")
+                    });
+                }
+
+            });
+        });
+    </script>
+
+    <script>
         AOS.init(); // 동작
     </script>
 
@@ -42,21 +83,55 @@
 
 <body>
 
-    <div class="wrap">
-        <div class="title"></div>
-        <div class="social-menu">
-            <ul>
-                <li><a href="https://github.com/seungyeobKim" target="blank">
-                    <i class="fab fa-github"></i></a></li>
-                <li><a href="https://www.instagram.com/yeob_ios/" target="blank">
-                    <i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100009460243244" target="blank">
-                    <i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="https://open.kakao.com/o/st4yGnic" target="blank">
-                    <i class="far fa-comment"></i></a></li>
-            </ul>
+    <!-- ID 값 고정(변경불가) -->
+    <div id="fullpage">
+        <!-- 클래스명 "section" 고정 -->
+        <div class="section">
+            <div class="wrap">
+                <div class="pro" data-aos="fade-up" data-aos-offset="200"
+                data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <div class="headcopy">
+                        <h1 class="main">개발자 및 디자이너<br>김승엽 입니다.</h1>
+                        <p class="sub">Develop, Design 둘 다 해내는 DD입니다.</p>
+                    </div>
+                    <div class="profile"></div>
+                </div>
+
+                <div class="minis">
+                    <div class="social-menu">
+                        <ul>
+                            <li><a href="https://github.com/seungyeobKim" target="blank">
+                                <i class="fab fa-github"></i></a></li>
+                            <li><a href="https://www.instagram.com/yeob_ios/" target="blank">
+                                <i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100009460243244" target="blank">
+                                <i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://open.kakao.com/o/st4yGnic" target="blank">
+                                <i class="far fa-comment"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <h1 class="main_title">안녕하세요<br>생각하는 디자이너<br>김승엽입니다.</h1>
+
+        <div class="section">
+            <!-- 가로 슬라이드 클래스명 "slide" 고정 -->
+            <div class="one-portfolio"></div>
+        </div>
+        <div class="section">
+            <!-- 가로 슬라이드 클래스명 "slide" 고정 -->
+            <div class="two-portfolio"></div>
+        </div>
+        <div class="section">
+            <!-- 가로 슬라이드 클래스명 "slide" 고정 -->
+            <div class="three-portfolio"></div>
+        </div>
+        <div class="section">
+            <!-- 가로 슬라이드 클래스명 "slide" 고정 -->
+            <div class="four-portfolio"></div>
+        </div>
+
     </div>
 
 </body>
+</html>

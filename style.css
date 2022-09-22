@@ -1,12 +1,16 @@
 body {
-    background-image: url("./img/title.jpg");
-    background-size: auto;
+    background-image: url("/img/title.jpg");
+    background-size: cover;
 }
 
-.wrap {
-    display: flex;
-    position: relative;
-    flex-direction: column; /* 위에서 아래로 내용 전개 */
+.container {
+    display: grid;
+    /* column */
+    grid-template-columns: 150px 12fr 150px;
+    column-gap: 20px;
+    /* row */
+    grid-template-rows: 1fr;
+    row-gap: 1080px;
 }
 
 .title {

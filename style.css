@@ -5,37 +5,20 @@ body {
 
 .container {
     display: grid;
-    /* column */
-    grid-template-columns: 150px 12fr 150px;
-    column-gap: 20px;
-    /* row */
-    grid-template-rows: 1fr;
-    row-gap: 1080px;
-}
-
-.title {
-    /** 사이즈 **/
     width: 1920px;
     height: 2160px;
-    /** 정렬 **/
-    position: relative;
-    z-index: 1;
-    background-position: center;
-    background-size: cover;
-    background-image: url("/img/title.jpg");
+
+    /* areas */
+    grid-template-areas:
+		"   a     .      .       .     .      .       .     .      .       .   header header header   a   "
+		"   a     .      .       .     .      .       .     .      .       .     .      .      .      a   "
+		"   a     .      .    title  title  title  title    .      .       .     .      .      .      a   "
+		"   a     .      .       .     .      .       .     .     main   main   main   main    .      a   "
+        "   a     .      .       .     .      .    button button   .       .     .      .      .      a   ";
 }
-.main_title {
-    /** 정렬 **/
-    display: block;
-    float: left;
-    position: absolute;
-    z-index: 2;
-    margin-left: 416px;
-    margin-top: 1175px;
-    /** 폰트 **/
-    font-family: 'NanumSquareExtraBold';
-    line-height: 90px;
-    font-size: 60px;
+
+.header {
+    grid-area: header;
 }
 
 .social-menu {
@@ -117,32 +100,14 @@ body {
     background: rgba(0, 0, 0, 0.829);
 }
 
-.emoji1 {
-    display: block;
-    float: right;
-    position: absolute;
-    z-index: 2;
-    width: 32px;
-    height: 32px;
-    margin-left: 1098px;
-    margin-top: 1495px;
+.title {
+    grid-area: title;
 }
 
-.about {
+.title_text {
     /** 폰트 **/
-    font-family: 'Roboto', sans-serif;
-    font-size: 32px;
-    font-weight: 700;
-    color: #14ae87;
-    /** 정렬 **/
-    display: block;
-    float: right;
-    position: absolute;
-    z-index: 2;
-    margin-left: 1134px;
-    margin-top: 1494px;
+    font-family: 'NanumSquareExtraBold';
+    line-height: 90px;
+    font-size: 60px;
 }
 
-.line {
-
-}

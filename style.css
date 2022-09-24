@@ -7,14 +7,6 @@ body {
     display: grid;
     width: 1920px;
     height: 2160px;
-
-    /* areas */
-    grid-template-areas:
-		"   a     .      .       .     .      .       .     .      .       .   header header header   a   "
-		"   a     .      .       .     .      .       .     .      .       .     .      .      .      a   "
-		"   a     .      .    title  title  title  title    .      .       .     .      .      .      a   "
-		"   a     .      .       .     .      .       .     .     main   main   main   main    .      a   "
-        "   a     .      .       .     .      .    button button   .       .     .      .      .      a   ";
 }
 
 .header {

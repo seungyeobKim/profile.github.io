@@ -16,7 +16,7 @@
 }
 
 .item {
-  border: 0px solid #444444;
+  border: 1px solid #444444;
 }
 
 .title_image {
@@ -40,7 +40,8 @@
     bottom : 1.125rem;
 
     /** font **/
-    line-height: 90px;
+    color: #2B2B2B;
+    line-height: 5.625rem;
     font-size: 3.75rem;
     font-family: 'NanumSquareExtraBold';
 }
@@ -70,8 +71,71 @@
 
 .hr_line {
     position: relative; /* 요소 자기 자신을 기준으로 배치 */
-    bottom : 3.25rem;
+    bottom : 2.5625rem;
 
     border: 1px solid #D4D4D4;
 }
 
+.introduction {
+    position: relative; /* 요소 자기 자신을 기준으로 배치 */
+    bottom : 2.25rem;
+    left: 0.125rem;
+
+    /** font **/
+    color: #3B3B3B;
+    letter-spacing: 0.05rem;
+    font-size : 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.circle {
+    position: relative; /* 요소 자기 자신을 기준으로 배치 */
+    bottom: 2.25rem;
+    left: 0.125rem;
+    width: 0.5rem;
+    height: 0.5rem;
+
+    border : 0px solid #5B5B5B;
+    background-color: #5B5B5B;
+    border-radius: 100%;
+}
+
+.first_paragraph {
+    position: relative; /* 요소 자기 자신을 기준으로 배치 */
+    bottom: 4.3125rem;
+    left: 1.25rem;
+
+    /** font **/
+    color: #5B5B5B;
+    letter-spacing: 0.025rem;
+    line-height: 1.875rem;
+    font-size: 1rem;
+    font-family: 'NanumSquareRegular';
+}
+
+.second_paragraph {
+    position: relative; /* 요소 자기 자신을 기준으로 배치 */
+    bottom: 4.6875rem;
+    left: 1.3125rem;
+    z-index: 2;
+
+    /** font **/
+    color: #5B5B5B;
+    letter-spacing: 0.025rem;
+    line-height: 1.875rem;
+    font-size: 1rem;
+    font-family: 'NanumSquareRegular';
+}
+
+.rectangle {
+    position: relative; /* 요소 자기 자신을 기준으로 배치 */
+    bottom: 7.3118rem;
+    left: 1.25rem;
+
+    width: 2.75rem;
+    height: 1.25rem;
+    z-index: 1;
+
+    border : 0px solid #D8E8E4;
+    background-color: #D8E8E4;
+}

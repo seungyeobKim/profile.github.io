@@ -6,6 +6,7 @@
 .container {
     display: grid;
 
+
     /** columns, rows **/
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 20px;
@@ -33,6 +34,9 @@
 
 .title_text {
     grid-area: 4 / 3 / 5 / 7;
+
+    width: 33rem;
+    height: 22.5rem;
 }
 
 .text {
@@ -48,6 +52,9 @@
 
 .main {
     grid-area: 4 / 8 / 5 / 12;
+
+    width: 33rem;
+    height: 22.5rem;
 }
 
 .emoji {
@@ -126,6 +133,19 @@
     border-radius: 100%;
 }
 
+.circle_4 {
+    position: relative; /* 요소 자기 자신을 기준으로 배치 */
+    bottom: 8rem;
+    left: 0.125rem;
+
+    width: 0.5rem;
+    height: 0.5rem;
+
+    border: 0px solid #5B5B5B;
+    background-color: #5B5B5B;
+    border-radius: 100%;
+}
+
 .rectangle {
     position: relative; /* 요소 자기 자신을 기준으로 배치 */
     bottom: 7.3118rem;
@@ -177,4 +197,39 @@
     line-height: 1.875rem;
     font-size: 1rem;
     font-family: 'NanumSquareRegular';
+}
+
+.fourth_paragraph {
+    position: relative;
+    left: 1.25rem;
+    bottom: 10.0625rem;
+
+    /** font **/
+    color: #5B5B5B;
+    letter-spacing: 0.025rem;
+    line-height: 1.875rem;
+    font-size: 1rem;
+    font-family: 'NanumSquareRegular';
+}
+
+.fourth_paragraph_2 {
+    position: relative;
+    left: 17.9375rem;
+    bottom: 15.75rem;
+
+    /** font **/
+    color: #5B5B5B;
+    letter-spacing: 0.025rem;
+    line-height: 1.875rem;
+    font-size: 1rem;
+    font-family: 'NanumSquareRegular';
+}
+
+.coffee {
+    position: relative; /* 요소 자기 자신을 기준으로 배치 */
+    left: 16.1875rem;
+    bottom: 12.8125rem;
+
+    width: 1.5rem;
+    height: 1.5rem;
 }

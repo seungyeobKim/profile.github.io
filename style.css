@@ -9,15 +9,15 @@
 
     /** columns, rows **/
     grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: 20px;
+    grid-column-gap: 1.25rem;
     grid-template-rows: repeat(5, 1fr);
 
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 9.375rem;
+    margin-right: 9.375rem;
 }
 
 .item {
-  border: 1px solid #444444;
+  border: 0px solid #444444;
 }
 
 .title_image {

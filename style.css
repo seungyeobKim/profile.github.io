@@ -240,3 +240,15 @@
     width: 15.875rem;
     height: 22.5rem;
 }
+
+.hyperlink_text {
+    position: relative; /* 요소 자기 자신을 기준으로 배치 */
+    left: 0.75rem;
+
+    /** font **/
+    color: #2B2B2B;
+    letter-spacing: 0.025rem;
+    font-size: 1.25rem;
+    font-family: 'NanumSquareBold';
+    text-decoration: none; /* a 태그 밑줄 제거 */
+}

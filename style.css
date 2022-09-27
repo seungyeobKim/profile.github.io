@@ -233,3 +233,10 @@
     width: 1.5rem;
     height: 1.5rem;
 }
+
+.hyperlink {
+    grid-area: 5 / 3 / 6 / 5;
+
+    width: 15.875rem;
+    height: 22.5rem;
+}

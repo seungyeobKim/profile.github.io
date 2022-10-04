@@ -16,7 +16,7 @@
 }
 
 .item {
-  border: 0px solid #444444;
+  border: 1px solid #444444;
 }
 
 .title_image {
@@ -120,11 +120,25 @@
 
 .text {
     position: relative; /* 요소 자기 자신을 기준으로 배치 */
+    z-index: 1;
     left: 0.25rem;
     bottom : 1.875rem;
 
     /** font **/
     color: #2B2B2B;
+    line-height: 5.625rem;
+    font-size: 3.75rem;
+    font-family: 'NanumSquareExtraBold';
+}
+
+.text_2 {
+    position: relative; /* 요소 자기 자신을 기준으로 배치 */
+    z-index: 0;
+    left: .5rem;
+    bottom : 21.25rem;
+
+    /** font **/
+    color: #44cca9;
     line-height: 5.625rem;
     font-size: 3.75rem;
     font-family: 'NanumSquareExtraBold';

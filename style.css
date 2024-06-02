@@ -211,7 +211,7 @@
 
 .introduction_paragraph {
     position: relative; /* 요소 자기 자신을 기준으로 배치 */
-    left: 1.5rem;
+    left: 0.3rem;
     bottom: 0.25rem;
     z-index: 2;
 
@@ -225,7 +225,7 @@
 
 .introduction_paragraph_ex {
     position: relative; /* 요소 자기 자신을 기준으로 배치 */
-    left: 1.5rem;
+    left: 0.3rem;
 
     /** font **/
     color: #5B5B5B;
@@ -246,7 +246,7 @@
 
 .introduction_paragraph_xx {
     position: relative; /* 요소 자기 자신을 기준으로 배치 */
-    left: 1.5rem;
+    left: 0.3rem;
     bottom: 0.125rem;
 
     /** font **/
@@ -382,4 +382,3 @@
 
     margin-bottom: 2.0625rem;
 }
-
